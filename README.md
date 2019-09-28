@@ -1,10 +1,10 @@
 # ShouldRebuild
 
-[![Star this Repo](https://img.shields.io/github/stars/fluttercandies/should_rebuild)](https://github.com/fluttercandies/should_rebuild)
+[![Star this Repo](https://img.shields.io/github/stars/fantasy525/should_rebuild)](https://github.com/fantasy525/should_rebuild)
 [![pub package](https://img.shields.io/pub/v/should_rebuild.svg)](https://pub.dartlang.org/packages/should_rebuild) 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/fluttercandies/should_rebuild)](https://github.com/fluttercandies/should_rebuild/issues)
-[![GitHub forks](https://img.shields.io/github/forks/fluttercandies/should_rebuild)](https://github.com/fluttercandies/should_rebuild/forks)
+[![GitHub issues](https://img.shields.io/github/issues/fantasy525/should_rebuild)](https://github.com/fantasy525/should_rebuild/issues)
+[![GitHub forks](https://img.shields.io/github/forks/fantasy525/should_rebuild)](https://github.com/fluttercandies/should_rebuild/forks)
 
 A widget can prevent Child Widget unnecessary rebuilds.You can filter whether you need rebuild based on whether the property values received by the old Child Widget and the new Child Widget are equal.
 
