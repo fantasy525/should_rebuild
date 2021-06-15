@@ -1,6 +1,6 @@
 name: should_rebuild
 description: A widget can prevent Child Widget unnecessary rebuild.You can customize the rebuild conditions。
-version: 0.1.2
+version: 0.2.0
 author: fantasy525 <1056726491@qq.com>
 homepage: https://github.com/fantasy525/should_rebuild
 environment:
