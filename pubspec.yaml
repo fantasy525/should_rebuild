@@ -4,7 +4,7 @@ version: 0.1.2
 author: fantasy525 <1056726491@qq.com>
 homepage: https://github.com/fantasy525/should_rebuild
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:

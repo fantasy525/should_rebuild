@@ -28,16 +28,18 @@ class _TestState extends State<Test> {
   int productNum = 0;
   int counter = 0;
 
-  _incrementCounter(){
+  _incrementCounter() {
     setState(() {
       ++counter;
     });
   }
-  _incrementProduct(){
+
+  _incrementProduct() {
     setState(() {
       ++productNum;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,12 +49,19 @@ class _TestState extends State<Test> {
           child: Column(
             children: <Widget>[
               ShouldRebuild<Counter>(
-                shouldRebuild: (oldWidget, newWidget) => oldWidget.counter != newWidget.counter,
-                child: Counter(counter: counter,onClick: _incrementCounter,title: 'I am good Counter',),
+                shouldRebuild: (oldWidget, newWidget) =>
+                    oldWidget.counter != newWidget.counter,
+                child: Counter(
+                  counter: counter,
+                  onClick: _incrementCounter,
+                  title: 'I am good Counter',
+                ),
               ),
-
-              Text('productNum = $productNum',style: TextStyle(fontSize: 22,color: Colors.deepOrange),),
-              RaisedButton(
+              Text(
+                'productNum = $productNum',
+                style: TextStyle(fontSize: 22, color: Colors.deepOrange),
+              ),
+              ElevatedButton(
                 onPressed: _incrementProduct,
                 child: Text('increment Product'),
               )
@@ -64,33 +73,41 @@ class _TestState extends State<Test> {
   }
 }
 
-
-
 class Counter extends StatelessWidget {
   final VoidCallback onClick;
   final int counter;
   final String title;
-  Counter({this.counter,this.onClick,this.title});
+
+  Counter({
+    required this.counter,
+    required this.onClick,
+    required this.title,
+  });
+
   @override
   Widget build(BuildContext context) {
-    Color color = Color.fromRGBO(Random().nextInt(256), Random().nextInt(256), Random().nextInt(256), 1);
+    Color color = Color.fromRGBO(
+        Random().nextInt(256), Random().nextInt(256), Random().nextInt(256), 1);
     return AnimatedContainer(
       duration: Duration(milliseconds: 500),
-      color:color,
+      color: color,
       height: 150,
-      child:Column(
+      child: Column(
         children: <Widget>[
-          Text(title,style: TextStyle(fontSize: 30),),
+          Text(
+            title,
+            style: TextStyle(fontSize: 30),
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('counter = ${this.counter}',style: TextStyle(fontSize: 43,color: Colors.white),),
+              Text(
+                'counter = ${this.counter}',
+                style: TextStyle(fontSize: 43, color: Colors.white),
+              ),
             ],
           ),
-          RaisedButton(
-            color: color,
-            textColor: Colors.white,
-            elevation: 20,
+          ElevatedButton(
             onPressed: onClick,
             child: Text('increment Counter'),
           ),
