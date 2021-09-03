@@ -1,4 +1,6 @@
 # Changelog
+## [1.0.1]
+* null safety
 ## [0.1.2]
 
 * change assert

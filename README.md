@@ -1,7 +1,7 @@
 # ShouldRebuild
 
 [![Star this Repo](https://img.shields.io/github/stars/fantasy525/should_rebuild)](https://github.com/fantasy525/should_rebuild)
-[![pub package](https://img.shields.io/pub/v/should_rebuild.svg)](https://pub.dartlang.org/packages/should_rebuild) 
+[![pub package](https://img.shields.io/pub/v/should_rebuild.svg)](https://pub.dartlang.org/packages/should_rebuild)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/fantasy525/should_rebuild)](https://github.com/fantasy525/should_rebuild/issues)
 [![GitHub forks](https://img.shields.io/github/forks/fantasy525/should_rebuild)](https://github.com/fluttercandies/should_rebuild/forks)
@@ -13,7 +13,7 @@ A widget can prevent Child Widget unnecessary rebuilds.You can filter whether yo
 ### Add dependency
 ```yaml
 dependencies:
-  should_rebuild: 0.1.2
+  should_rebuild: 1.0.1
 ```
 Or
 ```yaml
